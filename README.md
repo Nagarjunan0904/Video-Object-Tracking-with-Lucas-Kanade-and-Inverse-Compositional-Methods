@@ -52,7 +52,7 @@ Python 3.8+
 ### Install dependencies
 pip install numpy scipy opencv-python matplotlib
 
-**## Scripts**
+## Scripts
 
 ### Translation-only Lucas–Kanade
 python test_lk.py car1 0
@@ -80,7 +80,7 @@ Outputs are saved under **results/** in subfolders like **results/lk/, results/l
 - Robust Affine: Less sensitive to noise and illumination changes.
 - Pyramidal LK: Handles large inter-frame displacements effectively.
 
-**## Acknowledgements**
+## Acknowledgements
 - Author        : Nagarjunan Saravanan
 - Libraries     : NumPy, SciPy, OpenCV, Matplotlib
 
