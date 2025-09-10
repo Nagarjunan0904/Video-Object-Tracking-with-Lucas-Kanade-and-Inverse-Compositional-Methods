@@ -36,7 +36,7 @@ The key objectives are:
 
 ---
 
-**## Implementation Highlights**
+## Implementation Highlights
 
 - **Lucas–Kanade (Translation Only):** Estimates displacement (dx, dy) between frames.
 - **Affine Lucas–Kanade:** Extends tracking with a 2×3 affine matrix for more complex transformations.
@@ -44,12 +44,12 @@ The key objectives are:
 - **Robust Affine Tracking:** Handles illumination changes and outliers with Huber/Tukey estimators.
 - **Pyramidal Lucas–Kanade:** Coarse-to-fine tracking to manage large inter-frame motion.
 
-**## Running the Code**
+## Running the Code
 
-**### Python version**
+### Python version
 Python 3.8+
 
-**### Install dependencies**
+### Install dependencies
 pip install numpy scipy opencv-python matplotlib
 
 **## Scripts**
@@ -73,7 +73,7 @@ python test_ic_affine.py landing 0
 - **Second argument:** 0 (disable display) or 1 (show results while running)
 Outputs are saved under **results/** in subfolders like **results/lk/, results/lk_affine/, results/ic_affine/**, etc.
 
-**## Results**
+## Results
 - Lucas–Kanade (Translation): Fast, works for small rigid motions, fails under scale/rotation.
 - Affine Lucas–Kanade: Handles scale and rotation but slower and sensitive to occlusion.
 - Inverse Compositional: Matches affine flexibility, but 3–5× faster due to precomputation.
