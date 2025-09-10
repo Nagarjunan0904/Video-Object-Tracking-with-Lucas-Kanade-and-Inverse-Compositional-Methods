@@ -4,7 +4,7 @@ This project explores **video object tracking** through multiple implementations
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 The key objectives are:
 - Implement **Lucas–Kanade tracker** for translation-only motion.
@@ -16,8 +16,7 @@ The key objectives are:
 
 ---
 
-## 📂 Repository Structure
-
+## Repository Structure
 ```text
 .
 ├── InverseCompositionAffine.py   # Inverse compositional affine tracking
@@ -32,20 +31,18 @@ The key objectives are:
 ├── test_lk_affine_robust.py      # Test script for robust affine tracker
 ├── test_lk_pyramid.py            # Test script for pyramidal tracker
 ├── results/                      # Saved results (tracked frames with bounding boxes)
-└── docs/                         # Reports and assignment pdfs
-    ├── B01086330.pdf             # Project report
-    └── assign4.pdf               # Assignment handout
-'''
+
+```
 
 ---
 
 **## Implementation Highlights**
 
 - **Lucas–Kanade (Translation Only):** Estimates displacement (dx, dy) between frames.
-- Affine Lucas–Kanade: Extends tracking with a 2×3 affine matrix for more complex transformations.
-- Inverse Compositional Affine: Precomputes Jacobian and Hessian once, reducing runtime cost significantly.
-- Robust Affine Tracking: Handles illumination changes and outliers with Huber/Tukey estimators.
-- Pyramidal Lucas–Kanade: Coarse-to-fine tracking to manage large inter-frame motion.
+- **Affine Lucas–Kanade:** Extends tracking with a 2×3 affine matrix for more complex transformations.
+- **Inverse Compositional Affine:** Precomputes Jacobian and Hessian once, reducing runtime cost significantly.
+- **Robust Affine Tracking:** Handles illumination changes and outliers with Huber/Tukey estimators.
+- **Pyramidal Lucas–Kanade:** Coarse-to-fine tracking to manage large inter-frame motion.
 
 **## Running the Code**
 
